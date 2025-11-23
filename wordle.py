@@ -1,6 +1,6 @@
 import random
+from words import *
 
-words = ["brisk", "flame", "crypt", "shard", "tower"]
 word = random.choice(words)
 
 print("Welcome to Wordle!")
@@ -25,4 +25,5 @@ for i in range(1, 7):
 
     if letters == ["C" for k in range(5)]:
         print(f"\nCongrats! You guessed the word after {i} tries!")
+
         break
